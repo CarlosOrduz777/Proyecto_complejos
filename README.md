@@ -1,1 +1,2 @@
-#Libreria de Numeros Complejos
+# Libreria de Numeros Complejos
+## Funciones:
