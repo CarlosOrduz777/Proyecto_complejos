@@ -6,10 +6,13 @@ class Test_complejos(unittest.TestCase):
 
     def test_suma(self):
         self.assertEqual(complejos.sumar_complejos([1,2], [3,4]), [4,6])
+        self.assertEqual(complejos.sumar_complejos([32,1],[5,9]), [37,10])
     def test_producto(self):
         self.assertEqual(complejos.producto_complejos([-3,-1], [1,-2]),[-5, 5])
+        self.assertEqual(complejos.producto_complejos([4,5],[1,0]),[4,5])
     def test_resta(self):
         self.assertEqual(complejos.resta_complejos([5,3], [2,9]), [3,-6])
+        self.assertEqual(complejos.resta_complejos([6,9],[2,4]),[4,5])
     def test_division(self):
         self.assertEqual(complejos.division_complejos([0,3],[-1,-1]),[-1.5,-1.5])
         self.assertEqual(complejos.division_complejos([5,4],[0,0]), None)
